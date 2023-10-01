@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "34b57f02-bceb-4723-81d9-e184674ef7e8",
+		"name": "Test task car loan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25969495"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/applications?per_page=4&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"applications"
+					],
+					"query": [
+						{
+							"key": "per_page",
+							"value": "4"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/applications/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"applications",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dealer_id\": 1,\r\n    \"amount\": 10000,\r\n    \"term\": 12,\r\n    \"interest_rate\": 5.0,\r\n    \"reason\": \"Покупка автомобиля\",\r\n    \"status\": \"Новая\",\r\n    \"bank_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/applications",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"applications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dealer_id\": 1,\r\n    \"amount\": 12000,\r\n    \"term\": 24,\r\n    \"interest_rate\": 4.5,\r\n    \"reason\": \"Покупка автомобиля\",\r\n    \"status\": \"Одобрена\",\r\n    \"bank_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/applications/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"applications",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/applications/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"applications",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
