@@ -13,11 +13,13 @@ class Application extends Model
     use HasFactory;
 
     protected $fillable = [
+        'dealer_id',
         'amount',
         'term',
         'interest_rate',
         'reason',
         'status',
+        'bank_id',
     ];
 
     public function dealer(): BelongsTo
