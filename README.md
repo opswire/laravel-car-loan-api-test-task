@@ -37,11 +37,7 @@ Stack: Laravel, postgresql
 ```
 
 ```
-7. docker-compose run -it npm install
-```
-
-```
-8. docker-compose run -it app php artisan migrate --seed
+7. docker-compose run -it app php artisan migrate --seed
 ```
 
 #### Сервер доступен на 8000 порту
