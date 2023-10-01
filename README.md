@@ -12,33 +12,26 @@ Stack: Laravel, postgresql
 
 ## Инструкция По Запуску:
 
-```
-1. Clone the repo
-```
 
-```
-2. cd laravel-car-loan-api-test-task
-```
++ ``` Clone the repo```
 
-```
-3. cp .env.example .env
-```
 
-```
-4. docker-compose build
-```
++ ``` cd laravel-car-loan-api-test-task```
 
-```
-5. docker-compose up -d
-```
 
-```
-6. docker-compose run -it composer install 
-```
++ ```cp .env.example .env```
 
-```
-7. docker-compose run -it app php artisan migrate --seed
-```
+
++ ```docker-compose build```
+
+
++ ```docker-compose up -d```
+
+
++ ```docker-compose run -it composer install``` 
+
+
++ ```docker-compose run -it app php artisan migrate --seed```
 
 #### Сервер доступен на 8000 порту
 
